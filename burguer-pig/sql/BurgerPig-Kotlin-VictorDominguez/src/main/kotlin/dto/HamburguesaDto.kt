@@ -1,6 +1,5 @@
 package dto
 
-import models.Ingrediente
 import org.simpleframework.xml.Attribute
 import org.simpleframework.xml.Element
 import org.simpleframework.xml.ElementList

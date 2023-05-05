@@ -35,6 +35,8 @@ fun main(args: Array<String>) {
     val database = DataBaseManager
 
     val hamburguesas = hamburguesaController.buscarTodos()
+    val h = HamburguesaJsonService
+    h.exportar(hamburguesas)
     val ingredientes = ingredienteController.buscarTodos()
 
     val sql = "SELECT THamburguesas.id, TIngredientes.id, TLinea_Hamburguesa.cantidad " + //seleccionamos los datos que necesitemos
